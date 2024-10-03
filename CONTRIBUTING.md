@@ -27,8 +27,9 @@ To keep everything organized and ensure quality contributions, please take a mom
 1. **Follow the code style conventions** for your programming language:
    - PEP8 for Python.
    - Google Java Style for Java.
-2. Use **descriptive variable names** to make the code more readable.
-3. Write **clean, maintainable code**:
+2. Add **question link** in comments on top of solution.
+3. Use **descriptive variable names** to make the code more readable.
+4. Write **clean, maintainable code**:
    - Avoid large, monolithic functions—break them down into smaller, testable units.
 
 ---
@@ -67,7 +68,7 @@ To keep everything organized and ensure quality contributions, please take a mom
 
 - **New Solutions**: Solve a new LeetCode Problem of the Day.
 - **Optimize Existing Solutions**: Improve the efficiency or readability of existing solutions.
-- **Documentation**: Add problem descriptions, explanations, or comments.
+- **Documentation**: Add problem link, descriptions, explanations, or comments.
 
 ---
 
