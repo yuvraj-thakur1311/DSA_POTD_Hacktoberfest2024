@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed:
 ## 📄 How to Contribute
 
 1. Pick a **LeetCode Problem of the Day** from the [Issues](https://github.com/Saloni6111/DSA_POTD_Hacktoberfest2024/issues) section or add a new problem.
-2. Write your solution in a new file under the corresponding problem directory.
+2. Write your solution with question link on top of solution in a new file under the corresponding problem directory.
 3. Follow the coding guidelines in the [CONTRIBUTING.md](./CONTRIBUTING.md).
 4. Once your solution is ready, **commit** your changes and open a **Pull Request**.
 
@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed:
 If you're solving the problem `Two Sum`:
 
 1. Create a new file like `two_sum_solution.py` in the relevant folder.
-2. Add your solution, and make sure to include comments explaining your approach.
+2. Add your solution and in top of solution add questions link, and make sure to include comments explaining your approach.
 3. Create a **Pull Request** for review.
 
 ---
