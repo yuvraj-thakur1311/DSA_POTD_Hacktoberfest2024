@@ -1,0 +1,21 @@
+name: Greetings on creating an issue
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Adding a greeting comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const message = `👋 Hello @${context.payload.issue.user.login}, thank you for creating an issue! We will review it soon.`;
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: message,
+            });
