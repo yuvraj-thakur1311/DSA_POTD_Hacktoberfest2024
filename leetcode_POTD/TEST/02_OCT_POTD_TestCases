@@ -1,0 +1,55 @@
+Test Case 1: Basic test case with typical inputs
+Input: arr = {40, 10, 20, 30, 20, 10}
+Expected Output: Ranked Array: 4 1 2 3 2 1
+Test Case Description: This case checks typical behavior with repeating and distinct elements in a small array.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 2: Test case with already sorted input
+Input: arr = {1, 2, 3, 4, 5};
+Expected Output:Ranked Array: 1 2 3 4 5
+Test Case Description: This case checks if the function handles an already sorted array correctly by maintaining the same order and assigning ranks.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 3: Test case with reverse sorted input
+Input: arr = {100, 90, 80, 70}
+Expected Output: Ranked Array: 4 3 2 1
+Test Case Description: Checks how the function handles a reverse-sorted array and assigns ranks in decreasing order.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 4: Test case with all identical elements
+Input: arr = {5, 5, 5, 5};
+Expected Output: Ranked Array: 1 1 1 1
+Test Case Description: This tests how the function deals with arrays where all elements are the same, resulting in a single rank for all.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 5: Test case with negative and positive values
+Input: arr = {-10, 0, 10};
+Expected Output:Ranked Array: 1 2 3
+Test Case Description:This case checks how the function ranks a combination of negative and positive values.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 6: Test case with minimum and maximum values
+Input: arr = {-1e9, 0, 1e9};
+Expected Output: Ranked Array: 1 2 3
+Test Case Description: Checks how the function deals with extreme values near the boundary of the input constraint.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 7: Test case with empty input
+Input: arr = {};
+Expected Output: Ranked Array: {}
+Test Case Description: This edge case checks how the function behaves with an empty input array. The expected behavior is to return an empty array.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 8: Test case with single element array
+Input: arr = {42};
+Expected Output: Ranked Array: 1
+Test Case Description: Tests the function's response when the input array contains only one element.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 9: Large input test (Performance testing)
+Input: arr(1e5, 1);
+Expected Output: Ranked Array: {1, 1, 1, ..., 1} // All elements should have rank 1
+Test Case Description: This is a performance test with a large input size where all elements are the same. The goal is to ensure the solution can handle the upper constraint limit efficiently.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 10: Test case with large distinct elements (Performance testing)
+Input: arr(1e5);
+iota(arr.begin(), arr.end(), -5e4);  // generates numbers from -50000 to 49999
+Expected Output: Ranked Array: {1, 2, 3, ..., 100000}
+Test Case Description: This performance test involves a large input size with distinct elements ranging from -50000 to 49999. It checks if the solution can scale and rank a large array efficiently.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Case 11: Test case with random values (Robustness)
+Input: arr = {-10, 50, 0, 50, -10};
+Expected Output: Ranked Array: 1 3 2 3 1
+Test Case Description: This checks for robustness when dealing with random values and multiple occurrences of the same number.
